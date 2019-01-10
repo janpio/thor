@@ -15,5 +15,9 @@ jobs:
     displayName: 'before install'
 
   - script: |
+      bundle install --without development
+    displayName: 'bundle install'
+
+  - script: |
       bundle exec thor spec
     displayName: 'bundle exec thor spec'
